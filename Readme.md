@@ -59,13 +59,28 @@ sudo chown -R 1000:1000 elasticsearch-data
 docker-compose down
 ```
 
-## Cấu hình API Key
+## Cấu hình
 
-1. Mở file `app.py` và cập nhật API key của OpenAI:
+1. **Cấu hình biến môi trường**:
 
-```python
-os.environ["OPENAI_API_KEY"] = "your-api-key-here"
-```
+   - Copy file `.env.example` thành `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   - Mở file `.env` và cập nhật API key của OpenAI:
+
+   ```
+   OPENAI_API_KEY=your-api-key-here
+   ```
+
+2. **Kiểm tra cấu hình**:
+   - Đảm bảo file `.env` đã được tạo và có API key hợp lệ
+   - Chạy ứng dụng để kiểm tra:
+   ```bash
+   streamlit run app.py
+   ```
 
 ## Chạy ứng dụng
 
