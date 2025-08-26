@@ -12,22 +12,23 @@
 
 ```bash
 # Cài đặt các thư viện chính
-pip3 install streamlit
-pip3 install elasticsearch
-pip3 install langchain
-pip3 install langchain-community
-pip3 install openai
-pip3 install python-dotenv
-pip3 install pytz
+pip install streamlit
+pip install elasticsearch==8.12.0
+pip install langchain
+pip install langchain-community
+pip install openai
+pip install python-dotenv
+pip install pytz
+pip install tiktoken
 
 # Cài đặt các thư viện xử lý tài liệu
-pip3 install unstructured[all-docs]
-pip3 install python-docx
-pip3 install pypdf
-pip3 install pdf2image
-pip3 install python-magic
-pip3 install nltk
-pip3 install beautifulsoup4
+pip install unstructured[all-docs]
+pip install python-docx
+pip install pypdf
+pip install pdf2image
+pip install python-magic
+pip install nltk
+pip install beautifulsoup4
 ```
 
 ## Cấu hình và Chạy Elasticsearch
