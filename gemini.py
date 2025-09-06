@@ -161,3 +161,4 @@ if prompt := st.chat_input("Nhập câu hỏi của bạn"):
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.chat_message("assistant"):
         st.markdown(response)
+
