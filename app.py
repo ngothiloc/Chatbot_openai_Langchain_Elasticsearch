@@ -19,13 +19,16 @@ import tempfile
 
 
 # Load biến môi trường từ file .env
-load_dotenv()
+from dotenv import load_dotenv
+load_dotenv(dotenv_path=".env", override=True)
 
 # Thiết lập API key cho OpenAI
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("OPENAI_API_KEY không được tìm thấy trong biến môi trường. Vui lòng kiểm tra file .env")
 os.environ["OPENAI_API_KEY"] = api_key
+
+print("OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
 
 # Kết nối Elasticsearch
 es = Elasticsearch("http://localhost:9200")

@@ -29,6 +29,11 @@ pip install pdf2image
 pip install python-magic
 pip install nltk
 pip install beautifulsoup4
+
+#
+pip install fastapi
+pip install uvicorn
+pip install python-multipart
 ```
 
 ## Cấu hình và Chạy Elasticsearch
@@ -73,7 +78,7 @@ docker-compose down
    - Mở file `.env` và cập nhật API key của OpenAI:
 
    ```
-   OPENAI_API_KEY=your-api-key-here
+   <!-- OPENAI_API_KEY=your-api-key-here -->
    ```
 
 2. **Kiểm tra cấu hình**:
