@@ -1,0 +1,23 @@
+# Thư viện chính
+streamlit
+elasticsearch==8.12.0
+langchain
+langchain-community
+openai
+python-dotenv
+pytz
+tiktoken
+
+# Xử lý tài liệu
+unstructured[all-docs]
+python-docx
+pypdf
+pdf2image
+python-magic
+nltk
+beautifulsoup4
+
+# API và server
+fastapi
+uvicorn
+python-multipart
